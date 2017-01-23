@@ -1,7 +1,7 @@
 [![MIT License][license-image]][license-url]
 
 # Paste to kodi
-> paste stdout to kodi (XBMC) by JSON-RPC
+> paste stdin to kodi (XBMC) by JSON-RPC
 
 
 ## Install
