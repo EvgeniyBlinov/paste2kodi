@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+const kodi_rpc = require('node-kodi');
+const KODI_HOST = '127.0.0.1:8080';
+const KODI_USER = 'kodi';
+const KODI_PASS = 'vjqrjlb86';
+ 
+const kodi = new kodi_rpc({
+    url:      KODI_HOST,
+    user:     KODI_USER,
+    password: KODI_PASS
+});
+
+var data   = '';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+
+process.stdin.on('data', function(chunk) {
+    data += chunk;
+});
+
+process.stdin.on('end', function() {
+    kodi.input.sendText(data).then(function(r) {
+        console.log(r);
+    });
+});

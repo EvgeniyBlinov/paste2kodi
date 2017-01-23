@@ -1,0 +1,14 @@
+{
+  "name": "paste2kodi",
+  "version": "1.0.0",
+  "description": "Paste text to kodi",
+  "main": "bin/paste2kodi",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Evgeniy Blinov",
+  "license": "MIT",
+  "dependencies": {
+    "node-kodi": "0.0.1-alpha"
+  }
+}
